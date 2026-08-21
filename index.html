@@ -1,8 +1,12 @@
 <!DOCTYPE html>
+<!--doctype tells type of document to web browser that is html-->
 <html lang="en">
-    <!--it just tells webpage that content language is english -->
+    <!--it just tells webpage that content language is english 
+    html tag is the root tag or parent tag of head and body tag-->
 
 <head>
+    <!-- things not to display on webpage is containeed in the head tag-->
+</head>
     <meta charset="UTF-8">
     <!--1.meta==tag hiding information from user (like abstraction)
         2.charset==kayword that tells computer about the encoding language
@@ -10,47 +14,90 @@
             it can be:
                     utf-16
                     utf-32 
-                    ASCII==american code for information interchange(0-9==num,given in COA SUB) also-->
+                    ASCII==american standard code for information interchange(0-9==num,given in COA SUB) also-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- makes the web page responsive for all the devices(samsung,ios,windows,etc)-->
     <title><h1>first webpage</h1></title>
+    <!--adds the title to the webpage on it-->
 </head>
+
 <body>
+    <!--it contains the information which to be shown on the webpage-->
     <h1>😇hello world!😇</h1>
-    <p>Hi! Iam Tejas Kailas Nirgude.
-       I had paste a beautiful image link of spider-man  plaese watch it.
-    </p>
-                       <br> <a href="https://www.youtube.com" target="_parent">
-                        <img src="https://tse2.mm.bing.net/th/id/OIP.kA13Itmxev0ytEqrJf_f1gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
-                      alt="an image of spider-man:" width="100" height="100">
-                         </a> 
+    <!--this are the heading tags which are of following types
+            (biggest) 1]h1 >> 2]h2>> 3]h3 >> 4]h4 >> 5]h5 >> 6]h6 (smallest)
+            we use these tags according to the order of the importance of text we added-->
+
+    <center>
+        
+    <!--alligns the text or content to centre(mmiddle)of webpage-->
+        <h6>
+            <p>Hi! Iam Tejas Kailas Nirgude.<br>
+            I had paste a beautiful image of spider-man plaese watch it.
+            </p>
+        </h6>
+    <!--it is a paragraph tag which creates a paragraph-->
+   
+                    <br><a href="https://www.youtube.com" target="_parent">
+                         <!--
+                            2]target we can use:
+                                1."_blank"==opens in new tab 
+                                2."_self"==opens in existing tab
+                                3."_parent"==opens in parent frame(new browser window)
+                                4."_top"== open in full window web-->
+
+                        <!--we are accessing the link of other webpages called
+                                        ABSOLUTE LINKS
+                            if accessing another self webpage
+                                            RELATIVE LINKS   -->
+
+                        <!--  anchor tag:creates a hyperlink(used to add links) to access another webpage,image,etc.
+                        1]basic syntax is:
+                        1.opening tag              2.href key word
+                        3.link/name of image file jpeg/png
+                        4.msg to be displayed      5. closing tag -->
+
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.kA13Itmxev0ytEqrJf_f1gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                    alt="an image of spider-man:" width="100" height="100">
+                    <!--1]<img>==image tag is used to add any image from server via link
+                        2]src== it is the source of image
+                                                    we can use relative or absolute images like links 
+                        3] alt(attribute)== used name to display when server has error/issues then instead of image
+                         person can see the given alt sentence to know about what content was there-->
+                    </a> 
             
+    </center>
+    <center>
+            <br> <a href="/access file.html">my another webpage link</a>
 
-        <center>
-            <br> <a href="https://unsplash.com/s/photos/spiderman">spiderman image</a>
-            <!-- <br>==moves code to on new line-->
-                <br><a  href= "imag.jpeg" target="_top"> 
-                <img src="imag.jpeg" alt="image of spiderman:" width="300" height="500" align="middle">
+            <!-- <br>==moves code to on new line means the breakline-->
+           <!-- we had to put / before name of file when file is in same folder of index.htmll code
+            [if it is in another folder] href="/new folder name/file name"-->
+            
+                <br><a  href= "iamg.jpeg" target="_top"> 
+                <img src="imag.jpeg" alt="image of spiderman:" width="200" height="300" align="middle">
+                <!--need to set only one of height/width both at a time-->
             </a>
-        </center>
-    <!--center alligns the image to centre of page and allign moves the image to left right-->
+
+            <!--center alligns the image to centre of page and allign moves the image to left right-->
     
-            <!--  anchor tag:creates a hyperlink to access another webpage,image,etc.
-              basic syntax is:
-                         1.opening tag              2.href key word
-                         3.link/name of image file jpeg/png
-                         4.msg to be displayed      5. closing tag -->
+    </center>
+<p>          
+<!--bold==<b>bold information</b>-->
+<p align="left"><b>MY SKILLS ARE:</b>
+<!--under only opening paragraph tag we can use align to right left or center-->
+<i><br>
+1]PYTHON <br>
+2]C++ <br>
+3]C <br>
+</i>
+<!-- italic==<i>itallic information</i>-->
 
+<u>
+4]working on miniproject:<b>in html</b></u>
+ <!-- underlinewords==<u>underlined content </u>-->
 
-
-        <!--target we can use:
-                    1."_blank"==opens in new tab 
-                    2."_self"==opens in existing tab
-                    3."_parent"==opens in parent frame(new browser window)
-                    4."_top"== open in full window
-                    1."_blank
-                    1."_blank-->
-
-                          
+</p>                    
                         
                         
                        
@@ -59,3 +106,10 @@
 </body>
 </body>
 </html>
+<!--shortcuts:
+1]for boiler code(intial common part)
+        ! and enter 
+2]for commenting selected part
+        ctrl + /
+3]to wrap the lines in single line(prevents from side scrolling)
+        select lines->settings-> commmand pallete->toggle word wrap-->
