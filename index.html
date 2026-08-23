@@ -11,10 +11,10 @@
     <!--1.meta==tag hiding information from user (like abstraction)
         2.charset==kayword that tells computer about the encoding language
         3.utf==unicode transformation format -8-bit:==encodes the text into binary language  for computer
-            it can be:
-                    utf-16
-                    utf-32 
-                    ASCII==american standard code for information interchange(0-9==num,given in COA SUB) also-->
+        it can be:
+            utf-16
+            utf-32 
+            ASCII==american standard code for information interchange(0-9==num,given in COA SUB) also-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- makes the web page responsive for all the devices(samsung,ios,windows,etc)-->
     <title><h1>first webpage</h1></title>
@@ -29,6 +29,7 @@
             we use these tags according to the order of the importance of text we added-->
 
     <center>
+    <hr color="red" size="5">        
         
     <!--alligns the text or content to centre(mmiddle)of webpage-->
         <h6>
@@ -39,7 +40,8 @@
     <!--it is a paragraph tag which creates a paragraph-->
    
                     <br><a href="https://www.youtube.com" target="_parent">
-                         <!--
+                         <!-- i hadnot closed the anchor tag which means the below image will have this 
+                            link while tapping on it
                             2]target we can use:
                                 1."_blank"==opens in new tab 
                                 2."_self"==opens in existing tab
@@ -67,6 +69,7 @@
                     </a> 
             
     </center>
+    <hr color="purple" size="5">        
     <center>
             <br> <a href="/access file.html">my another webpage link</a>
 
@@ -75,6 +78,7 @@
             [if it is in another folder] href="/new folder name/file name"-->
             
                 <br><a  href= "iamg.jpeg" target="_top"> 
+                    <hr>
                 <img src="imag.jpeg" alt="image of spiderman:" width="200" height="300" align="middle">
                 <!--need to set only one of height/width both at a time-->
             </a>
@@ -82,7 +86,8 @@
             <!--center alligns the image to centre of page and allign moves the image to left right-->
     
     </center>
-<p>          
+<p>  
+<hr color="green" size="5">        
 <!--bold==<b>bold information</b>-->
 <p align="left"><b>MY SKILLS ARE:</b>
 <!--under only opening paragraph tag we can use align to right left or center-->
@@ -94,16 +99,60 @@
 <!-- italic==<i>itallic information</i>-->
 
 <u>
-4]working on miniproject:<b>in html</b></u>
+4]working on miniproject:<b>html</b></u>
  <!-- underlinewords==<u>underlined content </u>-->
 
 </p>                    
-                        
-                        
-                       
+       
+<big><u>BIG TEXT</u></big><br>
+<!--<big> tag creates the text of size==h2
+<small> tag creates the text of size==h5
+but not prefered to use these tags-->
+<hr color="black" size="10">
+<!--<hr> tag horinzontal ruler
+it creates a horizontal seperation between two line including a horizontal line(devide content in sections)
+to create a thick line we can add size in it also we can add color-->
+<small><u>SMALL TEXT</u></small>
+<hr>  
+<h1> H<sub>2</sub>O
+<br> H<sub>2</sub>SO<sub>4</sub></h1>
+
+<!-- <sub></sub> [subscript] tag is used to represent subscript(h2o,h2so4,etc) 2 and 4 are subscripts -->
+<HR CoLOR="BLACK" SIZE="3">
+<p>X<SUP>2</SUP>=?<BR>
+4<SUP>X+1</SUP>=?<BR>
+2<SUP>2</SUP>=4</p>
+<!--<sup></sup> [superscript] tag is used when we wanted to show something in power of something(x^2,X^4,2^3) -->
    
-</body>
-</body>
+
+<p>Lorem ipsum dolor sit amet consectetur,                                                      adipisicing elit. Adipisci rem quaerat numquam ullam odit,
+nisi vel facere voluptatum
+ illum et aspernatur deleniti aperiam, cum soluta consequatur repellat consectetur
+corrupti veritatis.</p>
+
+<pre>Lorem ipsum dolor sit amet consectetur,                                                      adipisicing elit. Adipisci rem quaerat numquam ullam odit,
+nisi vel facere voluptatum
+ illum et aspernatur deleniti aperiam, cum soluta consequatur repellat consectetur
+corrupti veritatis.</pre>   <!--{pre formatted text} on webpage it keeps the text as it is-->
+
+
+
+
+<ul><!--unordered list creates the below content as subpoints and creates dot infront of points-->
+    <li>tejas</li>
+       <ul><li>its my name</li></ul><!--another ul creates one more subpoint in existing subpoint-->
+    <li>CSS</li>
+    JavaScript
+</ul>
+<!--<ul> (Unordered List): This tag acts as the container for a bulleted list. It tells the browser that the items 
+    inside it are a group related to one another.
+
+<li> (List Item): This tag defines an individual item inside that list. Every single bullet point must be wrapped 
+    in its own pair of <li> and </li> tags.-->
+
+<!--lorem word  is used to take sample paragraph and if text cntains any space(discontinous text) but on webpage 
+the text aligns it self in single line without spaces
+IN THIS CASE WE USE <pre></pre> INSTEAD OOF PARAGRAPH TAG-->
 </body>
 </html>
 <!--shortcuts:
